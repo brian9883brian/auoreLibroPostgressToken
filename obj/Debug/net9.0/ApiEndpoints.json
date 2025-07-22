@@ -1,0 +1,157 @@
+[
+  {
+    "ContainingType": "Store.MicroServices.Autor.api.Controllers.AutorController",
+    "Method": "Crear",
+    "RelativePath": "api/Autor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "Store.MicroServices.Autor.api.Aplicacion.Nuevo\u002BEjecuta",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MediatR.Unit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Store.MicroServices.Autor.api.Controllers.AutorController",
+    "Method": "GetAutores",
+    "RelativePath": "api/Autor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Store.MicroServices.Autor.api.Aplicacion.AutorDto, Store.MicroServices.Autor.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Store.MicroServices.Autor.api.Controllers.AutorController",
+    "Method": "GetAutorLibro",
+    "RelativePath": "api/Autor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Store.MicroServices.Autor.api.Aplicacion.AutorDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Store.MicroServices.Autor.api.Controllers.AutorController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Autor/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "data",
+        "Type": "Store.MicroServices.Autor.api.Aplicacion.Editar\u002BEditarAutorCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MediatR.Unit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Store.MicroServices.Autor.api.Controllers.AutorController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Autor/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MediatR.Unit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Store.MicroServices.Autor.api.Controllers.AutorController",
+    "Method": "BuscarPorNombre",
+    "RelativePath": "api/Autor/buscar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Store.MicroServices.Autor.api.Aplicacion.AutorDto, Store.MicroServices.Autor.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
